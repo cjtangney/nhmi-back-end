@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "suite",
+  "info": {
+    "name": "suite",
+    "description": "Suite at one of our lodging facilities"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Description": {
+      "default": "",
+      "type": "text"
+    },
+    "Amenities": {
+      "default": "",
+      "type": "text"
+    },
+    "Weeknight Rate": {
+      "default": "",
+      "type": "decimal"
+    },
+    "Weekend Rate": {
+      "default": "",
+      "type": "decimal"
+    },
+    "Thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

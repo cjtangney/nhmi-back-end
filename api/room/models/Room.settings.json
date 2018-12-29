@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "room",
+  "info": {
+    "name": "room",
+    "description": "A room at one of our lodging facilities"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "Amenities": {
+      "default": "",
+      "type": "text"
+    },
+    "Weeknight Rate": {
+      "default": "",
+      "type": "decimal",
+      "required": true
+    },
+    "Weekend Rate": {
+      "default": "",
+      "type": "decimal",
+      "required": true
+    },
+    "Thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
