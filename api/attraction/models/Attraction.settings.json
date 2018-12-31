@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "attraction",
+  "info": {
+    "name": "attraction",
+    "description": "A nearby, area attraction"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Attraction Name": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Attraction Address": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Attraction Link": {
+      "default": "",
+      "type": "string"
+    },
+    "category": {
+      "model": "category",
+      "via": "attractions"
+    }
+  }
+}

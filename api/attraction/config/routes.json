@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/attractions",
+      "handler": "Attraction.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/attractions/count",
+      "handler": "Attraction.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/attractions/:_id",
+      "handler": "Attraction.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/attractions",
+      "handler": "Attraction.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/attractions/:_id",
+      "handler": "Attraction.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/attractions/:_id",
+      "handler": "Attraction.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
